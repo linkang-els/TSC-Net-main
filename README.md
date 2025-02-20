@@ -5,9 +5,9 @@ TSC-Net for Weakly supervised timing action localization implementation code (py
 * Create the conda environment as what I used.
 
 ``` 
-conda create -n TFEDCN python=3.6
+conda create -n TSC-Net python=3.6
 
-conda activate TFEDCN
+conda activate TSC-Net
 
 pip install -r requirements.txt
 
@@ -24,7 +24,7 @@ The feature for THUMOS'14 Dataset can be downloaded here. The annotations are in
 # Training
 * Run the train scripts:
 ``` 
-python main.py --max-seqlen 320 --lr 0.00005 --k 7 --dataset-name Thumos14reduced --path-dataset ./dataset --num-class 20 --use-model TSCNET_V1 --max-iter 3010 --dataset SampleDataset --weight_decay 0.001 --model-name TSCNET_V1
+python main_thumos14.py --max-seqlen 320 --lr 0.00005 --k 7 --dataset-name Thumos14reduced --path-dataset ./dataset --num-class 20 --use-model TSCNET_V1 --max-iter 3010 --dataset SampleDataset --weight_decay 0.001 --model-name TSCNET_V1
 
 
 ``` 
