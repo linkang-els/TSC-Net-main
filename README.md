@@ -1,4 +1,6 @@
 
+TSC-Net for Weakly supervised timing action localization implementation code (pytorch version)
+
 # Dependencies
 * Create the conda environment as what I used.
 
@@ -24,7 +26,6 @@ The feature for THUMOS'14 Dataset can be downloaded here. The annotations are in
 ``` 
 python main.py --max-seqlen 320 --lr 0.00005 --k 7 --dataset-name Thumos14reduced --path-dataset ./dataset --num-class 20 --use-model TSCNET_V1 --max-iter 3010 --dataset SampleDataset --weight_decay 0.001 --model-name TSCNET_V1
 
-.0
 
 ``` 
 
